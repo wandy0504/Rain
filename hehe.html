@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun Nayla!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🎉 Selamat Ulang Tahun, Nayla! 🎂</h1>
+  <p>Semoga hari ini penuh kebahagiaan, cinta, dan kejutan indah!</p>
+
+ <!-- Pesan spesial dari kamu -->
+<button onclick="showPersonalMessage()">💖 Lihat Pesan Spesial</button>
+<div id="specialMessage" class="hidden"></div>
+
+
+  <div class="wishlist-section">
+    <input id="wishlist" type="text" placeholder="Apa harapan atau hadiah impianmu, Nayla? 🎁" />
+    <button onclick="sendWishlist()">🎈 Kirim Wishlist</button>
+  </div>
+
+  <canvas id="fireworks"></canvas>
+
+  <audio autoplay loop>
+    <source src="lagu-ultah.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung pemutar audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

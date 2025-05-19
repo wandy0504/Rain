@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to top, #ffecd2, #fcb69f);
+    text-align: center;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin-top: 60px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  textarea, input {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff69b4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, pink, deeppink);
+    animation: float 8s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-10vh) translateX(30px); opacity: 0; }
+  }
+  
+  .ballon {
+    position: absolute;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff4081;
+    padding: 10px 15px;
+    border-radius: 30px;
+    animation: fly 6s ease-in-out forwards;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-120vh);
+      opacity: 0;
+    }
+  }
+
+  #specialMessage {
+    margin: 30px auto;
+    max-width: 600px;
+    font-size: 1.3em;
+    background: #fff0f5;
+    color: #d6336c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.6);
+    display: none;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .bloom {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, pink, hotpink);
+    border-radius: 50%;
+    animation: bloom 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes bloom {
+    0% {
+      transform: scale(0.2);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.3);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
